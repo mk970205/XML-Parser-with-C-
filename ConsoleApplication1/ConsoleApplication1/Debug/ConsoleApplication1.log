@@ -1,0 +1,2 @@
+﻿  소스.cpp
+c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\parsercustom.h(3): fatal error C1083: 포함 파일을 열 수 없습니다. 'libxml\parser.h': No such file or directory

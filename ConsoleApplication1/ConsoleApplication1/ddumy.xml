@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<major>
+		<code>COSE101</code>
+		<class>01</class>
+    <type>전필교양</type>
+		<name>컴퓨터프로그래밍I</name>
+		<credit>3</credit>
+		<time>월(6) 수(6)</time>
+		<room>정통관</room>
+		<distance>0분</distance>
+	</major>
+</root>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<major>
+		<code>COSE101</code>
+		<class>01</class>
+		<type>전필교양</type>
+		<name>컴퓨터프로그래밍I</name>
+		<credit>3</credit>
+		<time>월(6) 수(6)</time>
+		<room>정통관</room>
+		<distance>0분</distance>
+	</major>
+	<major>
+		<code>COSE101</code>
+		<class>02</class>
+		<type>전필교양</type>
+		<name>컴퓨터프로그래밍I</name>
+		<credit>3</credit>
+		<time>월(6) 수(6)</time>
+		<room>과도관</room>
+		<distance>3분</distance>
+		<klue>지뢰</klue>
+	</major>
+	<major>
+		<code>COSE101</code>
+		<class>03</class>
+		<type>전필교양</type>
+		<name>컴퓨터프로그래밍I</name>
+		<credit>3</credit>
+		<time>월(1) 수(1)</time>
+		<room>과도관</room>
+		<distance>3분</distance>
+	</major>
+	<major>
+		<code>COSE101</code>
+		<class>04</class>
+		<type>전필교양</type>
+		<name>컴퓨터프로그래밍I</name>
+		<credit>3</credit>
+		<time>화(5) 목(5)</time>
+		<room>정통관</room>
+		<distance>0분</distance>
+		<klue>꿀강</klue>
+	</major>
+	<major>
+		<code>COSE111</code>
+		<class>01</class>
+		<type>전필교양</type>
+		<name>전산수학I</name>
+		<credit>3</credit>
+		<time>화(2) 금(2)</time>
+		<room>정통관</room>
+		<distance>0분</distance>
+	</major>
+	<major>
+		<code>COSE111</code>
+		<class>02</class>
+		<type>전필교양</type>
+		<name>전산수학I</name>
+		<credit>3</credit>
+		<time>화(5) 목(5)</time>
+		<room>이학관</room>
+		<distance>5분</distance>
+		<klue>꿀강</klue>
+	</major>
+	<major>
+		<code>COSE111</code>
+		<class>03</class>
+		<type>전필교양</type>
+		<name>전산수학I</name>
+		<credit>3</credit>
+		<time>화(2) 목(2)</time>
+		<room>정통관</room>
+		<distance>0분</distance>
+	</major>
+	<selective>
+		<code>JURA101</code>
+		<class>00</class>
+		<type>선택교양</type>
+		<name>시장경제와법</name>
+		<credit>3</credit>
+		<time>금(1-2)</time>
+		<room>법학관신관</room>
+		<distance>20분</distance>
+		<klue>지뢰</klue>
+	</selective>
+	<selective>
+		<code>BUSS151</code>
+		<class>00</class>
+		<type>선택교양</type>
+		<name>현대기업경영</name>
+		<credit>3</credit>
+		<time>화(6) 목(6)</time>
+		<room>L-P관</room>
+		<distance>25분</distance>
+		<klue>지뢰</klue>
+	</selective>
+	<selective>
+		<code>KORE107</code>
+		<class>00</class>
+		<type>선택교양</type>
+		<name>한국고전의세계</name>
+		<credit>3</credit>
+		<time>월(3-4) 수(3-4)</time>
+		<room>교양관</room>
+		<distance>10분</distance>
+	</selective>
+	<selective>
+		<code>KORE117</code>
+		<class>00</class>
+		<type>선택교양</type>
+		<name>비교문학의이해</name>
+		<credit>3</credit>
+		<time>월(2) 수(2)</time>
+		<room>서관</room>
+		<distance>10분</distance>
+		<klue>꿀강</klue>
+	</selective>
+	<selective>
+		<code>KORE119</code>
+		<class>00</class>
+		<type>선택교양</type>
+		<name>한국문학과세계문학</name>
+		<credit>3</credit>
+		<time>월(3-4) 수(3-4)</time>
+		<room>정경관</room>
+		<distance>8분</distance>
+	</selective>
+	<core>
+		<code>GELA050</code>
+		<class>00</class>
+		<type>핵심교양</type>
+		<name>한국현대시산책</name>
+		<credit>3</credit>
+		<time>화(2) 목(2)</time>
+		<room>교육관</room>
+		<distance>20분</distance>
+	</core>
+	<core>
+		<code>GELA053</code>
+		<class>00</class>
+		<type>핵심교양</type>
+		<name>한국시속에살아있는독일문학</name>
+		<credit>3</credit>
+		<time>월(2) 수(2)</time>
+		<room>교양관</room>
+		<distance>10분</distance>
+	</core>
+	<core>
+		<code>GELA107</code>
+		<class>00</class>
+		<type>핵심교양</type>
+		<name>한국고전문학과배경사상</name>
+		<credit>3</credit>
+		<time>월(6) 수(6)</time>
+		<room>교양관</room>
+		<distance>10분</distance>
+	</core>
+	<core>
+		<code>GELA132</code>
+		<class>00</class>
+		<type>핵심교양</type>
+		<name>현대음악의이해</name>
+		<credit>3</credit>
+		<time>월(5) 수(5)</time>
+		<room>교양관</room>
+		<distance>10분</distance>
+		<klue>꿀강</klue>
+	</core>
+	<core>
+		<code>GELA133</code>
+		<class>00</class>
+		<type>핵심교양</type>
+		<name>한시,영화와엮어읽기</name>
+		<credit>3</credit>
+		<time>월(2) 수(2)</time>
+		<room>교양관</room>
+		<distance>10분</distance>
+	</core>
+</root>
