@@ -12,7 +12,10 @@ typedef enum _XMLelementMessage {
 	TIME,
 	ROOM,
 	DISTANCE,
-	KLUE
+	KLUE,
+	ATTENDANCE,
+	EVAL,
+	TUITION
 } XMLelementMessage;
 
 enum _classifyNumber getClassifyMessage(char* name) {
@@ -47,6 +50,21 @@ ratingNumber getKlueMessage(char* name) {
 			return NORMAL;
 	} switchs_end;
 }
+
+int getAttMessage(char* name) {
+	switchs(name) {
+		cases("TIGHT")
+			return TIGHT;
+		cases("LOOSE")
+			return LOOSE;
+		cases("NORMAL")
+			return ATT_NORMAL;
+		defaults
+			return ATT_NORMAL;
+	} switchs_end;
+	return 0;
+}
+
 roomNumber getRoomMessage(char* name) {
 	switchs(name) {
 		cases(u8"교육관")
@@ -91,6 +109,12 @@ int getElementMessage(char* name) {
 			return DISTANCE;
 		cases("klue")
 			return KLUE;
+		cases("attendance")
+			return ATTENDANCE;
+		cases("eval")
+			return EVAL;
+		cases("tuition")
+			return TUITION;
 		defaults
 			return XML_MESSAGE_DEFAULT;
 	} switchs_end;
@@ -116,6 +140,51 @@ whatDay whatDayFunc(char hangul[]) {
 
 	} switchs_end;
 }
+
+int getEvalMessage(char hangul[]) {
+	switchs(hangul) {
+		cases(u8"중간")
+			return EVAL_MIDDLE_EXAM;
+		cases(u8"기말")
+			return EVAL_FINAL_EXAM;
+		cases(u8"과제")
+			return EVAL_ASSIGNMENT;
+		cases(u8"발표")
+			return EVAL_PRESENTATION;
+		cases(u8"출석")
+			return EVAL_ATTENDANCE;
+		cases(u8"미1")
+			return EVAL_UNDETERMINED_1;
+		cases(u8"미2")
+			return EVAL_UNDETERMINED_2;
+		defaults
+			return EVAL_DEFALUT;
+
+	} switchs_end;
+	return 0;
+}
+
+int getTuitionMessage(char hangul[]) {
+	switchs(hangul) {
+		cases(u8"강의")
+			return TUI_LECTURE;
+		cases(u8"발표")
+			return TUI_PRESENTATION;
+		cases(u8"토론")
+			return TUI_DEBATION;
+		cases(u8"퀴즈")
+			return TUI_QUIZ;
+		cases(u8"미3")
+			return TUI_UNDETERMINED_3;
+		cases(u8"미4")
+			return TUI_UNDETERMINED_4;
+		defaults
+			return TUI_DEFAULT;
+
+	} switchs_end;
+	return 0;
+}
+
 timeListPtr registerTimeList(char* key) {
 	unsigned char hangul[5];
 	int hangulMode = 1;
@@ -184,4 +253,74 @@ timeListPtr registerTimeList(char* key) {
 		i++;
 	}
 	return nullNode;
+}
+
+void registerEvaluation(char* key, int evaluationArray[]) {
+	unsigned char hangul[12];
+	unsigned char soojja[6];
+	int hangulMode = 1;
+	int i = 0;
+	int j = 0;
+	int whatEval;
+	int howMuch;
+	for (int k = 0; k < EVALUATION_SIZE; k++) {
+		evaluationArray[k] = 0;
+	}
+	while (key[i] != '\0') {
+		if (hangulMode == 1) {
+			if (key[i] == '(') {
+				hangul[j] = '\0';
+				j = 0;
+				hangulMode = 0;
+			}
+			else if (key[i] != ' ') {
+				hangul[j] = key[i];
+				j++;
+			}
+		}
+		else {
+			if (key[i] == ')') {
+				soojja[j] = '\0';
+				j = 0;
+				hangulMode = 1;
+				whatEval = getEvalMessage(hangul);
+				howMuch = atoiCustom(soojja, 0);
+				evaluationArray[whatEval] = howMuch;
+
+			}
+			else { // just number
+				soojja[j] = key[i];
+				j++;
+			}
+		}
+		i++;
+	}
+}
+
+void registerTuition(char* key, int tuitionArray[]) {
+	unsigned char hangul[9];
+	int hangulMode = 1;
+	int i = 0;
+	int j = 0;
+	int whatTuition;
+	for (int k = 0; k < TUITION_SIZE; k++) {
+		tuitionArray[k] = 0;
+	}
+	while (key[i] != '\0') {
+		if (key[i] != ' ') {
+			hangul[j] = key[i];
+			j++;
+		}
+		else {
+			hangul[j] = '\0';
+			whatTuition = getTuitionMessage(hangul);
+			tuitionArray[whatTuition] = 1;
+			j = 0;
+		}
+		i++;
+	}
+	hangul[j] = '\0';
+	whatTuition = getTuitionMessage(hangul);
+	tuitionArray[whatTuition] = 1;
+	j = 0;
 }

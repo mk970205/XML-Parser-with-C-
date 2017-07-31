@@ -1,17 +1,16 @@
-﻿  소스.cpp
-c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\parsercustom.h(32): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ddolgi\pictures\desktop\vcpkg-master\installed\x64-windows\include\iconv.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\소스.cpp(69): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\소스.cpp(222): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\소스.cpp(239): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\소스.cpp(51): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+﻿  소스.c
+c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\parsercustom.h(35): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\소스.c(58): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\소스.c(40): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 'fopen' 선언을 참조하십시오.
-c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\소스.cpp(18): warning C4101: 'atoiCustomStore' :참조되지 않은 지역 변수입니다.
-c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\소스.cpp(16): warning C4101: 'idnum' :참조되지 않은 지역 변수입니다.
-c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\parsercustom.h(30): warning C4715: 'getClassifyMessage': 모든 제어 경로에서 값을 반환하지는 않습니다.
-c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\parsercustom.h(49): warning C4715: 'getKlueMessage': 모든 제어 경로에서 값을 반환하지는 않습니다.
-c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\parsercustom.h(73): warning C4715: 'getRoomMessage': 모든 제어 경로에서 값을 반환하지는 않습니다.
-c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\parsercustom.h(97): warning C4715: 'getElementMessage': 모든 제어 경로에서 값을 반환하지는 않습니다.
-c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\parsercustom.h(118): warning C4715: 'whatDayFunc': 모든 제어 경로에서 값을 반환하지는 않습니다.
+c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\소스.c(361): warning C4474: 'fprintf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\소스.c(361): note: 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 3개가 제공되었습니다.
+c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\소스.c(17): warning C4101: 'atoiCustomStore' :참조되지 않은 지역 변수입니다.
+c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\소스.c(15): warning C4101: 'idnum' :참조되지 않은 지역 변수입니다.
+c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\parsercustom.h(52): warning C4715: 'getKlueMessage': 모든 제어 경로에서 값을 반환하지는 않습니다.
+c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\parsercustom.h(91): warning C4715: 'getRoomMessage': 모든 제어 경로에서 값을 반환하지는 않습니다.
+c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\parsercustom.h(121): warning C4715: 'getElementMessage': 모든 제어 경로에서 값을 반환하지는 않습니다.
+c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\parsercustom.h(142): warning C4715: 'whatDayFunc': 모든 제어 경로에서 값을 반환하지는 않습니다.
+c:\users\ddolgi\documents\xml-parser-with-c-\consoleapplication1\consoleapplication1\parsercustom.h(33): warning C4715: 'getClassifyMessage': 모든 제어 경로에서 값을 반환하지는 않습니다.
   ConsoleApplication1.vcxproj -> C:\Users\DDoLgi\Documents\XML-Parser-with-C-\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
   ConsoleApplication1.vcxproj -> C:\Users\DDoLgi\Documents\XML-Parser-with-C-\ConsoleApplication1\x64\Debug\ConsoleApplication1.pdb (Partial PDB)

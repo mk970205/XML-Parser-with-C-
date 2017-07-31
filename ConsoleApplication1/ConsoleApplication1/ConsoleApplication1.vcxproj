@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="소스.cpp" />
+    <ClCompile Include="소스.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="lecture_classify.ini" />
@@ -154,6 +154,7 @@
   <ItemGroup>
     <Xml Include="aaa.xml" />
     <Xml Include="ddumy.xml" />
+    <Xml Include="dummy-new.xml" />
     <Xml Include="dummy.xml">
       <SubType>Designer</SubType>
     </Xml>

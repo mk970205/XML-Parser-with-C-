@@ -15,11 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="소스.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
     <None Include="lecture_classify.ini">
       <Filter>리소스 파일</Filter>
@@ -53,6 +48,9 @@
     <Xml Include="dummy.xml">
       <Filter>리소스 파일</Filter>
     </Xml>
+    <Xml Include="dummy-new.xml">
+      <Filter>리소스 파일</Filter>
+    </Xml>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lectureInfo.h">
@@ -64,5 +62,10 @@
     <ClInclude Include="stringAdvance.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="소스.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

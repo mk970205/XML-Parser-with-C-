@@ -20,3 +20,4 @@
 #define switchs_end } while ( 0 ); }
 
 #endif // __SWITCHS_H__
+
