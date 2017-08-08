@@ -43,20 +43,20 @@ int atoiCustom(char* key, int isDistance) {
 ratingNumber getKlueMessage(char* name) {
 	switchs(name) {
 		cases(u8"Áö·Ú")
-			return BAD;
+			return KLUE_BAD;
 		cases(u8"²Ü°­")
-			return GOOD;
+			return KLUE_GOOD;
 		defaults
-			return NORMAL;
+			return KLUE_NORMAL;
 	} switchs_end;
 }
 
 int getAttMessage(char* name) {
 	switchs(name) {
 		cases("TIGHT")
-			return TIGHT;
+			return ATT_TIGHT;
 		cases("LOOSE")
-			return LOOSE;
+			return ATT_LOOSE;
 		cases("NORMAL")
 			return ATT_NORMAL;
 		defaults
