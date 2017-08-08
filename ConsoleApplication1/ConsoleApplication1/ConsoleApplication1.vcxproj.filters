@@ -51,6 +51,12 @@
     <Xml Include="dummy-new.xml">
       <Filter>리소스 파일</Filter>
     </Xml>
+    <Xml Include="dummy-beta.xml">
+      <Filter>리소스 파일</Filter>
+    </Xml>
+    <Xml Include="dummy-custom.xml">
+      <Filter>리소스 파일</Filter>
+    </Xml>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lectureInfo.h">

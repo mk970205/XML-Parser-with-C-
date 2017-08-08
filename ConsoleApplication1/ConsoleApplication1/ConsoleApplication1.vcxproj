@@ -152,8 +152,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="aaa.xml" />
+    <Xml Include="aaa.xml">
+      <SubType>Designer</SubType>
+    </Xml>
     <Xml Include="ddumy.xml" />
+    <Xml Include="dummy-beta.xml" />
+    <Xml Include="dummy-custom.xml" />
     <Xml Include="dummy-new.xml" />
     <Xml Include="dummy.xml">
       <SubType>Designer</SubType>

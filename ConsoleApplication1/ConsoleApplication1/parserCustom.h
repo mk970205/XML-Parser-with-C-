@@ -42,23 +42,33 @@ int atoiCustom(char* key, int isDistance) {
 }
 ratingNumber getKlueMessage(char* name) {
 	switchs(name) {
-		cases(u8"지뢰")
-			return BAD;
-		cases(u8"꿀강")
-			return GOOD;
+		cases(u8"절평")
+			return RATING_VGOOD;
+		cases(u8"전달력좋음")
+			return RATING_GOOD;
+		cases(u8"보통")
+			return RATING_NORMAL;
+		cases(u8"전달력나쁨")
+			return RATING_BAD;
+		cases(u8"쓰레기")
+			return RATING_VBAD;
 		defaults
-			return NORMAL;
+			return RATING_DEFAULT;
 	} switchs_end;
 }
 
 int getAttMessage(char* name) {
 	switchs(name) {
 		cases("TIGHT")
-			return TIGHT;
+			return ATT_TIGHT;
 		cases("LOOSE")
-			return LOOSE;
+			return ATT_LOOSE;
 		cases("NORMAL")
 			return ATT_NORMAL;
+		cases("VTIGHT")
+			return ATT_VTIGHT;
+		cases("VLOOSE")
+			return ATT_VLOOSE;
 		defaults
 			return ATT_NORMAL;
 	} switchs_end;

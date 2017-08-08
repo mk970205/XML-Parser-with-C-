@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<major>
+		<code>COSE101</code>
+		<name>컴퓨터프로그래밍I</name>
+		<credit>3</credit>
+		<time>월(6) 수(6)</time>
+		<room>정통관</room>
+		<distance>0분</distance>
+		<klue>보통</klue>
+		<attendance>TIGHT</attendance>
+		<eval>과제(10) 중간(30) 기말(40) 출석(20)</eval>
+		<tuition>강의 발표 토론 퀴즈</tuition>
+	</major>
+	<major>
+		<code>COSE111</code>
+		<name>전산수학I</name>
+		<credit>3</credit>
+		<time>화(2) 목(2)</time>
+		<room>정통관</room>
+		<distance>0분</distance>
+		<klue>보통</klue>
+		<attendance>TIGHT</attendance>
+		<eval>과제(20) 중간(30) 기말(30) 출석(20)</eval>
+		<tuition>강의 발표 퀴즈</tuition>
+	</major>
+	<selective>
+		<code>JURA101</code>
+		<name>시장경제와법</name>
+		<credit>3</credit>
+		<time>금(1-2)</time>
+		<room>법학관신관</room>
+		<distance>20분</distance>
+		<klue>지뢰</klue>
+		<attendance>LOOSE</attendance>
+		<eval>과제(20) 중간(40) 기말(40)</eval>
+		<tuition>강의 발표 토론</tuition>
+	</selective>
+	<selective>
+		<code>BUSS151</code>
+		<name>현대기업경영</name>
+		<credit>3</credit>
+		<time>화(6) 목(6)</time>
+		<room>L-P관</room>
+		<distance>25분</distance>
+		<klue>지뢰</klue>
+		<attendance>NORMAL</attendance>
+		<eval>중간(40) 기말(40) 출석(20)</eval>
+		<tuition>강의 발표 토론 퀴즈</tuition>
+	</selective>
+	<selective>
+		<code>KORE107</code>
+		<name>한국고전의세계</name>
+		<credit>3</credit>
+		<time>월(3-4) 수(3-4)</time>
+		<room>교양관</room>
+		<distance>10분</distance>
+		<klue>보통</klue>
+		<attendance>TIGHT</attendance>
+		<eval>중간(40) 기말(40) 출석(20)</eval>
+		<tuition>강의 발표 토론 퀴즈</tuition>
+	</selective>
+	<selective>
+		<code>KORE117</code>
+		<name>비교문학의이해</name>
+		<credit>3</credit>
+		<time>월(2) 수(2)</time>
+		<room>서관</room>
+		<distance>10분</distance>
+		<klue>꿀강</klue>
+		<attendance>LOOSE</attendance>
+		<eval>과제(30) 중간(30) 기말(40)</eval>
+		<tuition>강의 발표 토론 퀴즈</tuition>
+	</selective>
+	<selective>
+		<code>KORE119</code>
+		<name>한국문학과세계문학</name>
+		<credit>3</credit>
+		<time>월(3-4) 수(3-4)</time>
+		<room>정경관</room>
+		<distance>8분</distance>
+		<klue>보통</klue>
+		<attendance>TIGHT</attendance>
+		<eval>중간(40) 기말(40) 출석(20)</eval>
+		<tuition>강의 발표 토론 퀴즈</tuition>
+	</selective>
+	<core>
+		<code>GELA050</code>
+		<name>한국현대시산책</name>
+		<credit>3</credit>
+		<time>화(2) 목(2)</time>
+		<room>교육관</room>
+		<distance>20분</distance>
+		<klue>보통</klue>
+		<attendance>NORMAL</attendance>
+		<eval>과제(10) 중간(30) 기말(40) 출석(20)</eval>
+		<tuition>강의 발표 토론 퀴즈</tuition>
+	</core>
+	<core>
+		<code>GELA053</code>
+		<name>한국시속에살아있는독일문학</name>
+		<credit>3</credit>
+		<time>월(2) 수(2)</time>
+		<room>교양관</room>
+		<distance>10분</distance>
+		<klue>보통</klue>
+		<attendance>LOOSE</attendance>
+		<eval>과제(20) 중간(30) 기말(30) 출석(20)</eval>
+		<tuition>강의 발표 토론 퀴즈</tuition>
+	</core>
+	<core>
+		<code>GELA107</code>
+		<name>한국고전문학과배경사상</name>
+		<credit>3</credit>
+		<time>월(6) 수(6)</time>
+		<room>교양관</room>
+		<distance>10분</distance>
+		<klue>보통</klue>
+		<attendance>NORMAL</attendance>
+		<eval>과제(10) 중간(30) 기말(40) 출석(20)</eval>
+		<tuition>강의 발표 토론 퀴즈</tuition>
+	</core>
+	<core>
+		<code>GELA132</code>
+		<name>현대음악의이해</name>
+		<credit>3</credit>
+		<time>월(5) 수(5)</time>
+		<room>교양관</room>
+		<distance>10분</distance>
+		<klue>꿀강</klue>
+		<attendance>LOOSE</attendance>
+		<eval>중간(40) 기말(40) 출석(20)</eval>
+		<tuition>강의 발표 토론 퀴즈</tuition>
+	</core>
+	<core>
+		<code>GELA133</code>
+		<name>한시,영화와엮어읽기</name>
+		<credit>3</credit>
+		<time>월(2) 수(2)</time>
+		<room>교양관</room>
+		<distance>10분</distance>
+		<klue>보통</klue>
+		<attendance>LOOSE</attendance>
+		<eval>과제(10) 중간(30) 기말(40) 출석(20)</eval>
+		<tuition>강의 발표 토론 퀴즈</tuition>
+	</core>
+	<core>
+		<code>GELA134</code>
+		<name>한시,영화와엮어읽</name>
+		<credit>3</credit>
+		<time>월(2) 수(2)</time>
+		<room>교양관</room>
+		<distance>10분</distance>
+		<klue>보통</klue>
+		<attendance>LOOSE</attendance>
+		<eval>과제(10) 중간(30) 기말(40) 출석(20)</eval>
+		<tuition>강의 발표 토론 퀴즈</tuition>
+	</core>
+	<core>
+		<code>GELA135</code>
+		<name>한시,영화와엮어</name>
+		<credit>3</credit>
+		<time>월(2) 수(2)</time>
+		<room>교양관</room>
+		<distance>10분</distance>
+		<klue>보통</klue>
+		<attendance>LOOSE</attendance>
+		<eval>과제(10) 중간(30) 기말(40) 출석(20)</eval>
+		<tuition>강의 발표 토론 퀴즈</tuition>
+	</core>
+	<core>
+		<code>GELA136</code>
+		<name>한시,영화와엮</name>
+		<credit>3</credit>
+		<time>월(2) 수(2)</time>
+		<room>교양관</room>
+		<distance>10분</distance>
+		<klue>보통</klue>
+		<attendance>LOOSE</attendance>
+		<eval>과제(10) 중간(30) 기말(40) 출석(20)</eval>
+		<tuition>강의 발표 토론 퀴즈</tuition>
+	</core>
+	<core>
+		<code>GELA137</code>
+		<name>한시,영화와</name>
+		<credit>3</credit>
+		<time>월(2) 수(2)</time>
+		<room>교양관</room>
+		<distance>10분</distance>
+		<klue>보통</klue>
+		<attendance>LOOSE</attendance>
+		<eval>과제(10) 중간(30) 기말(40) 출석(20)</eval>
+		<tuition>강의 발표 토론 퀴즈</tuition>
+	</core>
+	<core>
+		<code>GELA138</code>
+		<name>시,영화와엮어읽기</name>
+		<credit>3</credit>
+		<time>월(2) 수(2)</time>
+		<room>교양관</room>
+		<distance>10분</distance>
+		<klue>보통</klue>
+		<attendance>LOOSE</attendance>
+		<eval>과제(10) 중간(30) 기말(40) 출석(20)</eval>
+		<tuition>강의 발표 토론 퀴즈</tuition>
+	</core>
+	<core>
+		<code>GELA139</code>
+		<name>영화와엮어읽기</name>
+		<credit>3</credit>
+		<time>월(2) 수(2)</time>
+		<room>교양관</room>
+		<distance>10분</distance>
+		<klue>보통</klue>
+		<attendance>LOOSE</attendance>
+		<eval>과제(10) 중간(30) 기말(40) 출석(20)</eval>
+		<tuition>강의 발표 토론 퀴즈</tuition>
+	</core>
+	<core>
+		<code>GELA140</code>
+		<name>한시,영화엮어읽기</name>
+		<credit>3</credit>
+		<time>월(2) 수(2)</time>
+		<room>교양관</room>
+		<distance>10분</distance>
+		<klue>보통</klue>
+		<attendance>LOOSE</attendance>
+		<eval>과제(10) 중간(30) 기말(40) 출석(20)</eval>
+		<tuition>강의 발표 토론 퀴즈</tuition>
+	</core>
+	<core>
+		<code>GELA141</code>
+		<name>한시,영화어읽기</name>
+		<credit>3</credit>
+		<time>월(2) 수(2)</time>
+		<room>교양관</room>
+		<distance>10분</distance>
+		<klue>보통</klue>
+		<attendance>LOOSE</attendance>
+		<eval>과제(10) 중간(30) 기말(40) 출석(20)</eval>
+		<tuition>강의 발표 토론 퀴즈</tuition>
+	</core>
+</root>

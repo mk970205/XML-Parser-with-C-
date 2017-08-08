@@ -1,7 +1,7 @@
 #pragma once
 #define TUITION_SIZE 6
 #define EVALUATION_SIZE 7
-#define LECTURETABLE_SIZE 12
+#define LECTURE_SIZE 12
 typedef enum _messageNumber {
 	MESSAGE_DEFAULT,
 	NO_OVERLAP,
@@ -33,13 +33,15 @@ typedef enum _roomNumber {
 
 typedef enum _ratingNumber {
 	RATING_DEFAULT,
-	GOOD,
-	NORMAL,
-	BAD
+	RATING_VGOOD,
+	RATING_GOOD,
+	RATING_NORMAL,
+	RATING_BAD,
+	RATING_VBAD
 } ratingNumber;
 
 typedef enum _whatDay {
-	MON,
+	MON = 0,
 	TUE,
 	WED,
 	THU,
@@ -52,6 +54,7 @@ typedef enum _whatDay {
 typedef struct _timeBlock {
 	enum whatDay dayofWeek; //¿äÀÏ
 	int period; //±³½Ã
+	int interval; //¿¬°­
 } timeBlock;
 
 typedef struct _timeList {
@@ -95,9 +98,11 @@ typedef enum _tuition_index {
 } tuition_index;
 
 typedef enum _attendance {
-	LOOSE, //´À½¼
+	ATT_VLOOSE, // ¸Å¿ì ´À½¼
+	ATT_LOOSE, //´À½¼
 	ATT_NORMAL, // º¸Åë
-	TIGHT // ºýºýÇÔ
+	ATT_TIGHT, // ºýºýÇÔ
+	ATT_VTIGHT // ¸Å¿ì ºýºý
 } AttendanceRate;
 
 typedef struct _lectureInfo {

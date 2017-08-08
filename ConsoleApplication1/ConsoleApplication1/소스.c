@@ -1,8 +1,7 @@
 #pragma comment(lib, "Ws2_32.lib")
 #include"parserCustom.h"
 #include <stdlib.h>
-#define lectureSize 17
-lectureInfo lectureTable[lectureSize];
+lectureInfo lectureTable[LECTURE_SIZE];
 
 int main() {
 	system("chcp 65001");
@@ -17,7 +16,7 @@ int main() {
 	int atoiCustomStore;
 	int i;
 	int keyLength = 0;
-	doc = xmlParseFile("dummy-new.xml");
+	doc = xmlParseFile("dummy-custom.xml");
 	if (doc == NULL) {
 		printf("Document not parsed successfully. \n");
 		return 0;
@@ -105,7 +104,7 @@ int main() {
 		cur = savePoint1;
 		cur = cur->next;
 	}
-	for (int i = 0; i < LECTURETABLE_SIZE; i++) {
+	for (int i = 0; i < LECTURE_SIZE; i++) {
 		printf("%s \n", lectureTable[i].identifyNumber);
 		switch (lectureTable[i].classify)
 		{
@@ -189,28 +188,40 @@ int main() {
 		printf("%d%s \n", lectureTable[i].distance, u8"분");
 		switch (lectureTable[i].klueRating)
 		{
-		case GOOD:
-			printf("%s \n", u8"꿀강");
+		case RATING_VGOOD:
+			printf("%s \n", u8"절평");
 			break;
-		case NORMAL:
+		case RATING_GOOD:
+			printf("%s \n", u8"전달력좋음");
+			break;
+		case RATING_NORMAL:
 			printf("%s \n", u8"보통");
 			break;
-		case BAD:
-			printf("%s \n", u8"지뢰");
+		case RATING_BAD:
+			printf("%s \n", u8"전달력나쁨");
+			break;
+		case RATING_VBAD:
+			printf("%s \n", u8"쓰레기");
 			break;
 		default:
 			break;
 		}
 		switch (lectureTable[i].Att)
 		{
-		case LOOSE:
-			printf("%s \n", u8"느슨");
+		case ATT_VLOOSE:
+			printf("%s \n", u8"안부름");
+			break;
+		case ATT_LOOSE:
+			printf("%s \n", u8"가끔부름");
 			break;
 		case ATT_NORMAL:
 			printf("%s \n", u8"보통");
 			break;
-		case BAD:
-			printf("%s \n", u8"칼같음");
+		case ATT_VTIGHT:
+			printf("%s \n", u8"매일부름");
+			break;
+		case ATT_TIGHT:
+			printf("%s \n", u8"자주부름");
 			break;
 		default:
 			break;
@@ -280,15 +291,15 @@ int main() {
 	xmlFreeDoc(doc);
 	
 	fprintf(pFile, "[name]\n");
-	for (int i = 0; i < LECTURETABLE_SIZE; i++) {
+	for (int i = 0; i < LECTURE_SIZE; i++) {
 		fprintf(pFile, "%s=%s\n", lectureTable[i].identifyNumber, lectureTable[i].name);
 	}
 	fprintf(pFile, "[time]\n");
-	for (int i = 0; i < LECTURETABLE_SIZE; i++) {
+	for (int i = 0; i < LECTURE_SIZE; i++) {
 		fprintf(pFile, "%s=%s\n", lectureTable[i].identifyNumber, lectureTable[i].timeString);
 	}
 	fprintf(pFile, "[classify]\n");
-	for (int i = 0; i < LECTURETABLE_SIZE; i++) {
+	for (int i = 0; i < LECTURE_SIZE; i++) {
 		fprintf(pFile, "%s=", lectureTable[i].identifyNumber);
 		switch (lectureTable[i].classify)
 		{
@@ -307,7 +318,7 @@ int main() {
 		}
 	}
 	fprintf(pFile, "[room]\n");
-	for (int i = 0; i < LECTURETABLE_SIZE; i++) {
+	for (int i = 0; i < LECTURE_SIZE; i++) {
 		fprintf(pFile, "%s=", lectureTable[i].identifyNumber);
 		switch (lectureTable[i].room)
 		{
@@ -344,20 +355,74 @@ int main() {
 		}
 	}
 	fprintf(pFile, "[credit]\n");
-	for (int i = 0; i < LECTURETABLE_SIZE; i++) {
+	for (int i = 0; i < LECTURE_SIZE; i++) {
 		fprintf(pFile, "%s=%d\n", lectureTable[i].identifyNumber, lectureTable[i].credit);
 	}
+	fprintf(pFile, "[distance]\n");
+	for (int i = 0; i < LECTURE_SIZE; i++) {
+		fprintf(pFile, "%s=%d%s\n", lectureTable[i].identifyNumber, lectureTable[i].distance, u8"분");
+	}
+	fprintf(pFile, "[rating]\n");
+	for (int i = 0; i < LECTURE_SIZE; i++) {
+		fprintf(pFile, "%s=", lectureTable[i].identifyNumber);
+		switch (lectureTable[i].klueRating)
+		{
+		case RATING_VBAD:
+			fprintf(pFile, u8"쓰레기\n");
+			break;
+		case RATING_BAD:
+			fprintf(pFile, u8"전달력나쁨\n");
+			break;
+		case RATING_NORMAL:
+			fprintf(pFile, u8"보통\n");
+			break;
+		case RATING_GOOD:
+			fprintf(pFile, u8"전달력좋음\n");
+			break;
+		case RATING_VGOOD:
+			fprintf(pFile, u8"절평\n");
+			break;
+		default:
+			fprintf(pFile, u8"안됨\n");
+			break;
+		}
+	}
+	fprintf(pFile, "[Attendance]\n");
+	for (int i = 0; i < LECTURE_SIZE; i++) {
+		fprintf(pFile, "%s=", lectureTable[i].identifyNumber);
+		switch (lectureTable[i].klueRating)
+		{
+		case ATT_VLOOSE:
+			fprintf(pFile, u8"안부름\n");
+			break;
+		case ATT_LOOSE:
+			fprintf(pFile, u8"가끔부름\n");
+			break;
+		case ATT_NORMAL:
+			fprintf(pFile, u8"보통\n");
+			break;
+		case ATT_TIGHT:
+			fprintf(pFile, u8"자주부름\n");
+			break;
+		case ATT_VTIGHT:
+			fprintf(pFile, u8"매일부름\n");
+			break;
+		default:
+			fprintf(pFile, u8"안됨\n");
+			break;
+		}
+	}
 	fprintf(pFile, "[evaluation_method]\n");
-	for (int i = 0; i < LECTURETABLE_SIZE; i++) {
+	for (int i = 0; i < LECTURE_SIZE; i++) {
 		fprintf(pFile, "%s=%s\n", lectureTable[i].identifyNumber, lectureTable[i].evalString);
 	}
 	fprintf(pFile, "[tuition_method]\n");
-	for (int i = 0; i < LECTURETABLE_SIZE; i++) {
+	for (int i = 0; i < LECTURE_SIZE; i++) {
 		fprintf(pFile, "%s=%s\n", lectureTable[i].identifyNumber, lectureTable[i].tuitionString);
 	}
 
 	fprintf(pFile, "[time_room]\n");
-	for (int i = 0; i < LECTURETABLE_SIZE; i++) {
+	for (int i = 0; i < LECTURE_SIZE; i++) {
 		fprintf(pFile, "%s=%s ", lectureTable[i].identifyNumber, lectureTable[i].timeString, lectureTable[i]);
 		switch (lectureTable[i].room)
 		{
@@ -394,7 +459,7 @@ int main() {
 		}
 	}
 	fprintf(pFile, "[classify_credit]\n");
-	for (int i = 0; i < LECTURETABLE_SIZE; i++) {
+	for (int i = 0; i < LECTURE_SIZE; i++) {
 		fprintf(pFile, "%s=", lectureTable[i].identifyNumber);
 		switch (lectureTable[i].classify)
 		{
