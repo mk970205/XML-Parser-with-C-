@@ -1,7 +1,7 @@
 #pragma comment(lib, "Ws2_32.lib")
 #include"parserCustom.h"
 #include <stdlib.h>
-#define lectureSize 20
+#define lectureSize 17
 lectureInfo lectureTable[lectureSize];
 
 int main() {
@@ -17,7 +17,7 @@ int main() {
 	int atoiCustomStore;
 	int i;
 	int keyLength = 0;
-	doc = xmlParseFile("dummy-beta.xml");
+	doc = xmlParseFile("dummy-new.xml");
 	if (doc == NULL) {
 		printf("Document not parsed successfully. \n");
 		return 0;
@@ -37,7 +37,7 @@ int main() {
 		return 0;
 	}
 
-	pFile = fopen("lecture_info_beta.ini", "w");
+	pFile = fopen("lecture_info.ini", "w");
 
 	cur = cur->children;
 	i = 0;
@@ -189,13 +189,13 @@ int main() {
 		printf("%d%s \n", lectureTable[i].distance, u8"분");
 		switch (lectureTable[i].klueRating)
 		{
-		case KLUE_GOOD:
+		case GOOD:
 			printf("%s \n", u8"꿀강");
 			break;
-		case KLUE_NORMAL:
+		case NORMAL:
 			printf("%s \n", u8"보통");
 			break;
-		case KLUE_BAD:
+		case BAD:
 			printf("%s \n", u8"지뢰");
 			break;
 		default:
@@ -203,13 +203,13 @@ int main() {
 		}
 		switch (lectureTable[i].Att)
 		{
-		case ATT_LOOSE:
+		case LOOSE:
 			printf("%s \n", u8"느슨");
 			break;
 		case ATT_NORMAL:
 			printf("%s \n", u8"보통");
 			break;
-		case ATT_TIGHT:
+		case BAD:
 			printf("%s \n", u8"칼같음");
 			break;
 		default:
@@ -354,63 +354,6 @@ int main() {
 	fprintf(pFile, "[tuition_method]\n");
 	for (int i = 0; i < LECTURETABLE_SIZE; i++) {
 		fprintf(pFile, "%s=%s\n", lectureTable[i].identifyNumber, lectureTable[i].tuitionString);
-	}
-
-	fprintf(pFile, "[klue]\n");
-	for (int i = 0; i < LECTURETABLE_SIZE; i++) {
-		fprintf(pFile, "%s=", lectureTable[i].identifyNumber);
-		switch (lectureTable[i].klueRating)
-		{
-		case KLUE_VGOOD:
-			fprintf(pFile, u8"절평\n");
-			break;
-		case KLUE_GOOD:
-			fprintf(pFile, u8"전달력좋음\n");
-			break;
-		case KLUE_NORMAL:
-			fprintf(pFile, u8"보통\n");
-			break;
-		case KLUE_BAD:
-			fprintf(pFile, u8"전달력나쁨\n");
-			break;
-		case KLUE_VBAD:
-			fprintf(pFile, u8"쓰레기\n");
-			break;
-		default:
-			fprintf(pFile, u8"안됨\n");
-			break;
-		}
-	}
-
-	fprintf(pFile, "[attendance]\n");
-	for (int i = 0; i < LECTURETABLE_SIZE; i++) {
-		fprintf(pFile, "%s=", lectureTable[i].identifyNumber);
-		switch (lectureTable[i].Att)
-		{
-		case ATT_VLOOSE:
-			fprintf(pFile, u8"안부름\n");
-			break;
-		case ATT_LOOSE:
-			fprintf(pFile, u8"가끔부름\n");
-			break;
-		case ATT_NORMAL:
-			fprintf(pFile, u8"보통\n");
-			break;
-		case ATT_TIGHT:
-			fprintf(pFile, u8"자주부름\n");
-			break;
-		case ATT_VTIGHT:
-			fprintf(pFile, u8"매일부름\n");
-			break;
-		default:
-			fprintf(pFile, u8"안됨\n");
-			break;
-		}
-	}
-
-	fprintf(pFile, "[distance]\n");
-	for (int i = 0; i < LECTURETABLE_SIZE; i++) {
-		fprintf(pFile, "%s=%d\n", lectureTable[i].identifyNumber, lectureTable[i].distance);
 	}
 
 	fprintf(pFile, "[time_room]\n");
