@@ -95,6 +95,20 @@ roomNumber getRoomMessage(char* name) {
 			return WEST_HALL;
 		cases(u8"정경관")
 			return POLITIC;
+		cases(u8"과학관")
+			return HANA_SCIENCE;
+		cases(u8"법학관구관")
+			return OLD_LAW_HALL;
+		cases(u8"미래융합관")
+			return FUSION;
+		cases(u8"화정체육관")
+			return GYM_HALL;
+		cases(u8"생명관")
+			return BIO_HALL;
+		cases(u8"창의관")
+			return CREATIVE;
+		cases(u8"국제관")
+			return GLOBAL_HALL;
 		defaults
 			return ROOM_DEFAULT;
 	} switchs_end;

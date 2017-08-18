@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<major>
+		<code>COSE101</code>
+		<name>컴퓨터프로그래밍I</name>
+		<credit>3</credit>
+		<time>월(6) 수(6)</time>
+		<room>정통관</room>
+		<distance>0분</distance>
+		<klue>전달력좋음</klue>
+		<attendance>LOOSE</attendance>
+		<eval>과제(20) 중간(30) 기말(40) 출석(10)</eval>
+		<tuition>강의</tuition>
+	</major>
+	<major>
+		<code>COSE111</code>
+		<name>전산수학I</name>
+		<credit>3</credit>
+		<time>화(5) 목(5)</time>
+		<room>이학관</room>
+		<distance>6분</distance>
+		<klue>전달력좋음</klue>
+		<attendance>VLOOSE</attendance>
+		<eval>과제(20) 중간(30) 기말(30) 출석(20)</eval>
+		<tuition>강의 퀴즈</tuition>
+	</major>
+  <major>
+		<code>IFLS003</code>
+		<name>Academic English I</name>
+		<credit>2</credit>
+		<time>화(1) 목(1) 금(3)</time>
+		<room>국제관</room>
+		<distance>12분</distance>
+		<klue>보통</klue>
+		<attendance>VTIGHT</attendance>
+		<eval>과제(40) 중간(20) 기말(20) 출석(20)</eval>
+		<tuition>강의 퀴즈 발표 토론</tuition>
+	</major>
+  <major>
+		<code>GETE011</code>
+		<name>사고와표현 I</name>
+		<credit>2</credit>
+		<time>월(5) 수(5)</time>
+		<room>미래융합관</room>
+		<distance>3분</distance>
+		<klue>쓰레기</klue>
+		<attendance>VTIGHT</attendance>
+		<eval>과제(20) 중간(30) 기말(30) 출석(20)</eval>
+		<tuition>강의 퀴즈 토론 발표</tuition>
+	</major>
+  <core>
+    <code>GECE035</code>
+    <name>법과인권</name>
+    <credit>3</credit>
+    <time>화(5) 목(5)</time>
+    <room>법학신관</room>
+    <distance>20분</distance>
+    <klue>전달력좋음</klue>
+    <attendance>TIGHT</attendance>
+    <eval>과제(20) 중간(20) 기말(30) 출석(30)</eval>
+    <tuition>강의 토론</tuition>
+  </core>
+  <core>
+    <code>GECE041</code>
+    <name>뇌과학의윤리적이해</name>
+    <credit>3</credit>
+    <time>월(5) 수(5)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>보통</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(30) 중간(20) 기말(30) 출석(20)</eval>
+    <tuition>강의 발표</tuition>
+  </core>
+  <core>
+    <code>GECE050</code>
+    <name>배려의철학</name>
+    <credit>3</credit>
+    <time>월(3-4) 수(3-4)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>전달력좋음</klue>
+    <attendance>VLOOSE</attendance>
+    <eval>과제(60) 중간(20) 기말(10) 출석(10)</eval>
+    <tuition>강의</tuition>
+  </core>
+  <core>
+    <code>GECE057</code>
+    <name>논어,처음만나는한문고전</name>
+    <credit>3</credit>
+    <time>화(2) 목(2)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>전달력나쁨</klue>
+    <attendance>NORMAL</attendance>
+    <eval>과제(15) 중간(35) 기말(50) 출석(0)</eval>
+    <tuition>강의</tuition>
+  </core>
+  <core>
+    <code>GECE097</code>
+    <name>스포츠와윤리</name>
+    <credit>3</credit>
+    <time>목(1-2)</time>
+    <room>교육관</room>
+    <distance>20분</distance>
+    <klue>절평</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(20) 중간(20) 기말(20) 출석(40)</eval>
+    <tuition>강의</tuition>
+  </core>
+  <core>
+    <code>GEFC013</code>
+    <name>언어와문화</name>
+    <credit>3</credit>
+    <time>월(3-4) 수(3-4)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>전달력나쁨</klue>
+    <attendance>NORMAL</attendance>
+    <eval>과제(50) 중간(10) 기말(30) 출석(10)</eval>
+    <tuition>강의 발표</tuition>
+  </core>
+  <core>
+    <code>GEFC047</code>
+    <name>사회와문화의인류학적이해</name>
+    <credit>3</credit>
+    <time>화(5) 목(5)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>전달력나쁨</klue>
+    <attendance>NORMAL</attendance>
+    <eval>과제(20) 중간(30) 기말(30) 출석(20)</eval>
+    <tuition>강의</tuition>
+  </core>
+  <core>
+    <code>GEFC066</code>
+    <name>중국의언어와문자</name>
+    <credit>3</credit>
+    <time>화(1) 목(1)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>전달력좋음</klue>
+    <attendance>LOOSE</attendance>
+    <eval>과제(10) 중간(40) 기말(40) 출석(10)</eval>
+    <tuition>강의</tuition>
+  </core>
+  <core>
+    <code>GEFC076</code>
+    <name>유라시아한인문화탐방</name>
+    <credit>3</credit>
+    <time>화(6) 목(6)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>쓰레기</klue>
+    <attendance>VLOOSE</attendance>
+    <eval>과제(25) 중간(20) 기말(50) 출석(5)</eval>
+    <tuition>강의 발표</tuition>
+  </core>
+  <core>
+    <code>GEFC087</code>
+    <name>번역문화</name>
+    <credit>3</credit>
+    <time>월(5) 수(5)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>전달력좋음</klue>
+    <attendance>NORMAL</attendance>
+    <eval>과제(15) 중간(35) 기말(35) 출석(15)</eval>
+    <tuition>강의 발표 토론</tuition>
+  </core>
+  <core>
+    <code>GELA050</code>
+    <name>한국현대시산책</name>
+    <credit>3</credit>
+    <time>화(2) 목(2)</time>
+    <room>교육관</room>
+    <distance>20분</distance>
+    <klue>절평</klue>
+    <attendance>NORMAL</attendance>
+    <eval>과제(20) 중간(35) 기말(35) 출석(10)</eval>
+    <tuition>강의</tuition>
+  </core>
+  <core>
+    <code>GELA053</code>
+    <name>한국시속에살아있는독일문학</name>
+    <credit>3</credit>
+    <time>월(2) 수(2)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>전달력좋음</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(20) 중간(30) 기말(30) 출석(20)</eval>
+    <tuition>강의 토론 발표</tuition>
+  </core>
+  <core>
+    <code>GELA107</code>
+    <name>한국고전문학과배경사상</name>
+    <credit>3</credit>
+    <time>월(6) 수(6)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>절평</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(0) 중간(30) 기말(50) 출석(20)</eval>
+    <tuition>강의 발표</tuition>
+  </core>
+  <core>
+    <code>GELA132</code>
+    <name>현대음악의이해</name>
+    <credit>3</credit>
+    <time>월(5) 수(5)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>절평</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(35) 중간(30) 기말(20) 출석(15)</eval>
+    <tuition>강의 발표</tuition>
+  </core>
+  <core>
+    <code>GELA133</code>
+    <name>한시,영화와엮어읽기</name>
+    <credit>3</credit>
+    <time>월(2) 수(2)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>보통</klue>
+    <attendance>TIGHT</attendance>
+    <eval>과제(30) 중간(20) 기말(30) 출석(20)</eval>
+    <tuition>강의 발표</tuition>
+  </core>
+  <core>
+    <code>GESO018</code>
+    <name>생활속의지적재산권</name>
+    <credit>3</credit>
+    <time>월(5) 수(5)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>절평</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(20) 중간(30) 기말(30) 출석(20)</eval>
+    <tuition>강의 토론 발표</tuition>
+  </core>
+  <core>
+    <code>GESO019</code>
+    <name>고령사회와법</name>
+    <credit>3</credit>
+    <time>월(6) 수(6)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>전달력좋음</klue>
+    <attendance>VLOOSE</attendance>
+    <eval>과제(20) 중간(30) 기말(30) 출석(20)</eval>
+    <tuition>강의</tuition>
+  </core>
+  <core>
+    <code>GESO051</code>
+    <name>한국의사회변동과교육</name>
+    <credit>3</credit>
+    <time>화(6) 목(6)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>보통</klue>
+    <attendance>NORMAL</attendance>
+    <eval>과제(35) 중간(20) 기말(30) 출석(15)</eval>
+    <tuition>강의 토론</tuition>
+  </core>
+  <core>
+    <code>GESO053</code>
+    <name>세계화시대의도시와국토</name>
+    <credit>3</credit>
+    <time>월(6) 수(6)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>전달력좋음</klue>
+    <attendance>LOOSE</attendance>
+    <eval>과제(20) 중간(30) 기말(30) 출석(20)</eval>
+    <tuition>강의</tuition>
+  </core>
+  <core>
+    <code>GESO073</code>
+    <name>인간관계론</name>
+    <credit>3</credit>
+    <time>화(3-4) 목(3-4)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>전달력좋음</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(20) 중간(20) 기말(30) 출석(30)</eval>
+    <tuition>강의</tuition>
+  </core>
+  <core>
+    <code>GEHI016</code>
+    <name>인물로본일본의역사</name>
+    <credit>3</credit>
+    <time>월(5) 수(5)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>보통</klue>
+    <attendance>NORMAL</attendance>
+    <eval>과제(10) 중간(40) 기말(40) 출석(10)</eval>
+    <tuition>강의 토론 발표</tuition>
+  </core>
+  <core>
+    <code>GEHI033</code>
+    <name>삼국유사의세계</name>
+    <credit>3</credit>
+    <time>화(1) 목(1)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>보통</klue>
+    <attendance>LOOSE</attendance>
+    <eval>과제(10) 중간(40) 기말(40) 출석(10)</eval>
+    <tuition>강의 발표</tuition>
+  </core>
+  <core>
+    <code>GEHI042</code>
+    <name>전쟁과평화의역사</name>
+    <credit>3</credit>
+    <time>화(2) 목(2)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>전달력좋음</klue>
+    <attendance>LOOSE</attendance>
+    <eval>과제(20) 중간(30) 기말(30) 출석(20)</eval>
+    <tuition>강의 토론</tuition>
+  </core>
+  <core>
+    <code>GEHI059</code>
+    <name>서양문화의사회사</name>
+    <credit>3</credit>
+    <time>화(2) 목(2)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>보통</klue>
+    <attendance>TIGHT</attendance>
+    <eval>과제(20) 중간(40) 기말(40) 출석(0)</eval>
+    <tuition>강의 토론 발표</tuition>
+  </core>
+  <core>
+    <code>GEHI060</code>
+    <name>서양고대의신화와역사</name>
+    <credit>3</credit>
+    <time>화(2) 목(2)</time>
+    <room>법학관신관</room>
+    <distance>22분</distance>
+    <klue>절평</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(30) 중간(30) 기말(30) 출석(10)</eval>
+    <tuition>강의 토론 발표</tuition>
+  </core>
+  <selective>
+    <code>JURA102</code>
+    <name>정보와법제도</name>
+    <credit>3</credit>
+    <time>화(5-6)</time>
+    <room>법학관신관</room>
+    <distance>22분</distance>
+    <klue>쓰레기</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(0) 중간(40) 기말(40) 출석(20)</eval>
+    <tuition>강의 발표</tuition>
+  </selective>
+  <selective>
+    <code>KORE134</code>
+    <name>아동청소년문학의이해</name>
+    <credit>3</credit>
+    <time>수(2) 금(2)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>보통</klue>
+    <attendance>NORMAL</attendance>
+    <eval>과제(20) 중간(40) 기말(40) 출석(0)</eval>
+    <tuition>강의 토론 발표</tuition>
+  </selective>
+  <selective>
+    <code>KORE135</code>
+    <name>세계속의한국어</name>
+    <credit>3</credit>
+    <time>화(3-4) 금(3-4)</time>
+    <room>서관</room>
+    <distance>12분</distance>
+    <klue>쓰레기</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(0) 중간(40) 기말(40) 출석(20)</eval>
+    <tuition>강의</tuition>
+  </selective>
+  <selective>
+    <code>PHIL101</code>
+    <name>문학과철학</name>
+    <credit>3</credit>
+    <time>화(7-8) 목(7-8)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>보통</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(40) 중간(0) 기말(50) 출석(10)</eval>
+    <tuition>강의 발표 퀴즈</tuition>
+  </selective>
+  <selective>
+    <code>HOKA102</code>
+    <name>서울지역의향토문화</name>
+    <credit>3</credit>
+    <time>월(6) 수(6)</time>
+    <room>법학관구관</room>
+    <distance>21분</distance>
+    <klue>절평</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(10) 중간(40) 기말(40) 출석(10)</eval>
+    <tuition>강의 발표</tuition>
+  </selective>
+  <selective>
+    <code>HOEW108</code>
+    <name>중국의역사와인물</name>
+    <credit>3</credit>
+    <time>월(6) 수(6)</time>
+    <room>과학관</room>
+    <distance>7분</distance>
+    <klue>전달력좋음</klue>
+    <attendance>TIGHT</attendance>
+    <eval>과제(10) 중간(30) 기말(40) 출석(20)</eval>
+    <tuition>강의 토론</tuition>
+  </selective>
+  <selective>
+    <code>PSYC110</code>
+    <name>심리학의이해</name>
+    <credit>3</credit>
+    <time>금(5-6)</time>
+    <room>법학관신관</room>
+    <distance>22분</distance>
+    <klue>전달력나쁨</klue>
+    <attendance>TIGHT</attendance>
+    <eval>과제(20) 중간(30) 기말(30) 출석(20)</eval>
+    <tuition>강의 토론 퀴즈</tuition>
+  </selective>
+  <selective>
+    <code>SOCI112</code>
+    <name>사회문제의이해</name>
+    <credit>2</credit>
+    <time>금(3-4)</time>
+    <room>서관</room>
+    <distance>12분</distance>
+    <klue>보통</klue>
+    <attendance>LOOSE</attendance>
+    <eval>과제(40) 중간(0) 기말(40) 출석(20)</eval>
+    <tuition>강의 토론 발표</tuition>
+  </selective>
+  <selective>
+    <code>GERM137</code>
+    <name>독일문학의탐색</name>
+    <credit>3</credit>
+    <time>화(3-4) 목(3-4)</time>
+    <room>법학관구관</room>
+    <distance>21분</distance>
+    <klue>보통</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(20) 중간(30) 기말(40) 출석(10)</eval>
+    <tuition>강의</tuition>
+  </selective>
+  <selective>
+    <code>GERM138</code>
+    <name>독일여성문학</name>
+    <credit>3</credit>
+    <time>월(2) 금(2)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>전달력나쁨</klue>
+    <attendance>VLOOSE</attendance>
+    <eval>과제(20) 중간(20) 기말(40) 출석(20)</eval>
+    <tuition>강의 발표</tuition>
+  </selective>
+  <selective>
+    <code>HANM110</code>
+    <name>동양의지혜</name>
+    <credit>3</credit>
+    <time>월(3-4) 수(3-4)</time>
+    <room>법학관구관</room>
+    <distance>21분</distance>
+    <klue>전달력좋음</klue>
+    <attendance>LOOSE</attendance>
+    <eval>과제(20) 중간(30) 기말(40) 출석(10)</eval>
+    <tuition>강의</tuition>
+  </selective>
+  <selective>
+    <code>LING101</code>
+    <name>언어의이해</name>
+    <credit>3</credit>
+    <time>화(3-4) 목(3-4)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>보통</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(20) 중간(35) 기말(35) 출석(10)</eval>
+    <tuition>강의 발표</tuition>
+  </selective>
+  <selective>
+    <code>LING142</code>
+    <name>언어와시각커뮤니케이션</name>
+    <credit>3</credit>
+    <time>월(5) 수(5)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>전달력좋음</klue>
+    <attendance>LOOSE</attendance>
+    <eval>과제(10) 중간(35) 기말(50) 출석(5)</eval>
+    <tuition>강의 토론 발표</tuition>
+  </selective>
+  <selective>
+    <code>LING146</code>
+    <name>언어의응용</name>
+    <credit>3</credit>
+    <time>월(3-4) 수(3-4)</time>
+    <room>법학관신관</room>
+    <distance>22분</distance>
+    <klue>쓰레기</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(30) 중간(30) 기말(30) 출석(10)</eval>
+    <tuition>강의 발표</tuition>
+  </selective>
+  <selective>
+    <code>LIET102</code>
+    <name>산림과문화</name>
+    <credit>3</credit>
+    <time>화(5-6)</time>
+    <room>생명관</room>
+    <distance>4분</distance>
+    <klue>전달력좋음</klue>
+    <attendance>VLOOSE</attendance>
+    <eval>과제(5) 중간(45) 기말(45) 출석(5)</eval>
+    <tuition>강의 토론</tuition>
+  </selective>
+  <selective>
+    <code>POLI107</code>
+    <name>한국정치의이해</name>
+    <credit>3</credit>
+    <time>월(3-4) 수(3-4)</time>
+    <room>정경관</room>
+    <distance>10분</distance>
+    <klue>절평</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(20) 중간(25) 기말(25) 출석(30)</eval>
+    <tuition>강의 발표</tuition>
+  </selective>
+  <selective>
+    <code>ECON110</code>
+    <name>경제학개론</name>
+    <credit>3</credit>
+    <time>화(3-4) 목(3-4)</time>
+    <room>정경관</room>
+    <distance>10분</distance>
+    <klue>전달력좋음</klue>
+    <attendance>LOOSE</attendance>
+    <eval>과제(5) 중간(40) 기말(50) 출석(5)</eval>
+    <tuition>강의 퀴즈</tuition>
+  </selective>
+  <selective>
+    <code>PHEK101</code>
+    <name>축구</name>
+    <credit>1</credit>
+    <time>월(1-2)</time>
+    <room>화정체육관</room>
+    <distance>30분</distance>
+    <klue>보통</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>출석(100)</eval>
+    <tuition>강의</tuition>
+  </selective>
+  <selective>
+    <code>HEED102</code>
+    <name>부모되기교육</name>
+    <credit>3</credit>
+    <time>화(1) 목(1)</time>
+    <room>교육관</room>
+    <distance>20분</distance>
+    <klue>쓰레기</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(20) 중간(30) 기말(30) 출석(20)</eval>
+    <tuition>강의</tuition>
+  </selective>
+  <selective>
+    <code>COSE156</code>
+    <name>모두를위한파이썬프로그래밍</name>
+    <credit>3</credit>
+    <time>수(3) 목(8) 금(3-4)</time>
+    <room>정통관</room>
+    <distance>0분</distance>
+    <klue>전달력좋음</klue>
+    <attendance>VLOOSE</attendance>
+    <eval>과제(20) 중간(40) 기말(40) 출석(0)</eval>
+    <tuition>강의 퀴즈</tuition>
+  </selective>
+  <selective>
+    <code>COSE159</code>
+    <name>소프트웨어윤리</name>
+    <credit>3</credit>
+    <time>화(3-4) 목(3)</time>
+    <room>정통관</room>
+    <distance>0분</distance>
+    <klue>전달력좋음</klue>
+    <attendance>NORMAL</attendance>
+    <eval>과제(20) 중간(30) 기말(40) 출석(10)</eval>
+    <tuition>강의 발표</tuition>
+  </selective>
+  <selective>
+    <code>GEOG101</code>
+    <name>도시와국토</name>
+    <credit>2</credit>
+    <time>목(3-4)</time>
+    <room>과도관</room>
+    <distance>3분</distance>
+    <klue>전달력나쁨</klue>
+    <attendance>VLOOSE</attendance>
+    <eval>과제(25) 중간(30) 기말(40) 출석(5)</eval>
+    <tuition>강의 발표 퀴즈</tuition>
+  </selective>
+  <selective>
+    <code>SPGE112</code>
+    <name>기초음악이론</name>
+    <credit>2</credit>
+    <time>월(3-4)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>절평</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(30) 중간(20) 기말(40) 출석(10)</eval>
+    <tuition>강의 발표</tuition>
+  </selective>
+  <selective>
+    <code>FRAN120</code>
+    <name>미술로보는프랑스역사와문화</name>
+    <credit>3</credit>
+    <time>화(2) 목(2)</time>
+    <room>서관</room>
+    <distance>12분</distance>
+    <klue>보통</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(20) 중간(30) 기말(40) 출석(10)</eval>
+    <tuition>강의 토론</tuition>
+  </selective>
+  <selective>
+    <code>RUSS124</code>
+    <name>러시아명작의이해</name>
+    <credit>3</credit>
+    <time>수(3-4) 금(3-4)</time>
+    <room>서관</room>
+    <distance>12분</distance>
+    <klue>전달력나쁨</klue>
+    <attendance>TIGHT</attendance>
+    <eval>과제(10) 중간(40) 기말(40) 출석(10)</eval>
+    <tuition>강의 토론 발표</tuition>
+  </selective>
+  <selective>
+    <code>JPAN132</code>
+    <name>대중문화로보는일본문화론</name>
+    <credit>3</credit>
+    <time>화(7-8) 목(7-8)</time>
+    <room>교육관</room>
+    <distance>22분</distance>
+    <klue>전달력나쁨</klue>
+    <attendance>NORMAL</attendance>
+    <eval>과제(20) 중간(30) 기말(40) 출석(10)</eval>
+    <tuition>강의 발표 퀴즈</tuition>
+  </selective>
+  <selective>
+    <code>EGRN203</code>
+    <name>과학기술과지식재산</name>
+    <credit>3</credit>
+    <time>수(7-9)</time>
+    <room>과도관</room>
+    <distance>3분</distance>
+    <klue>절평</klue>
+    <attendance>LOOSE</attendance>
+    <eval>과제(10) 중간(40) 기말(40) 출석(10)</eval>
+    <tuition>강의 토론</tuition>
+  </selective>
+  <selective>
+    <code>EGRN204</code>
+    <name>특허정보검색및실습</name>
+    <credit>3</credit>
+    <time>화(7-9)</time>
+    <room>창의관</room>
+    <distance>7분</distance>
+    <klue>보통</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(10) 중간(35) 기말(45) 출석(10)</eval>
+    <tuition>강의 발표 토론</tuition>
+  </selective>
+  <selective>
+    <code>PAPP111</code>
+    <name>정부와나</name>
+    <credit>3</credit>
+    <time>화(3-4) 목(3-4)</time>
+    <room>정경관</room>
+    <distance>10분</distance>
+    <klue>절평</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(5) 중간(40) 기말(50) 출석(5)</eval>
+    <tuition>강의</tuition>
+  </selective>
+  <selective>
+    <code>SPFL125</code>
+    <name>아랍의언어와문화</name>
+    <credit>3</credit>
+    <time>화(6) 목(6)</time>
+    <room>교양관</room>
+    <distance>10분</distance>
+    <klue>보통</klue>
+    <attendance>VTIGHT</attendance>
+    <eval>과제(20) 중간(30) 기말(40) 출석(10)</eval>
+    <tuition>강의 토론</tuition>
+  </selective>
+</root>

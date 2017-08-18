@@ -16,7 +16,7 @@ int main() {
 	int atoiCustomStore;
 	int i;
 	int keyLength = 0;
-	doc = xmlParseFile("dummy-custom.xml");
+	doc = xmlParseFile("lecture.xml");
 	if (doc == NULL) {
 		printf("Document not parsed successfully. \n");
 		return 0;
@@ -181,6 +181,27 @@ int main() {
 			break;
 		case POLITIC:
 			printf("%s \n", u8"정경관");
+			break;
+		case HANA_SCIENCE:
+			printf("%s \n", u8"과학관");
+			break;
+		case OLD_LAW_HALL:
+			printf("%s \n", u8"법학관구관");
+			break;
+		case CREATIVE:
+			printf("%s \n", u8"창의관");
+			break;
+		case FUSION:
+			printf("%s \n", u8"미래융합관");
+			break;
+		case BIO_HALL:
+			printf("%s \n", u8"생명관");
+			break;
+		case GYM_HALL:
+			printf("%s \n", u8"화정체육관");
+			break;
+		case GLOBAL_HALL:
+			printf("%s \n", u8"국제관");
 			break;
 		default:
 			break;
@@ -349,6 +370,27 @@ int main() {
 		case POLITIC:
 			fprintf(pFile, u8"정경관\n");
 			break;
+		case HANA_SCIENCE:
+			fprintf(pFile, u8"과학관\n");
+			break;
+		case OLD_LAW_HALL:
+			fprintf(pFile, u8"법학관구관\n");
+			break;
+		case CREATIVE:
+			fprintf(pFile, u8"창의관\n");
+			break;
+		case FUSION:
+			fprintf(pFile, u8"미래융합관\n");
+			break;
+		case BIO_HALL:
+			fprintf(pFile, u8"생명관\n");
+			break;
+		case GYM_HALL:
+			fprintf(pFile, u8"화정체육관\n");
+			break;
+		case GLOBAL_HALL:
+			fprintf(pFile, u8"국제관\n");
+			break;
 		default:
 			fprintf(pFile, u8"안됨\n");
 			break;
@@ -390,7 +432,7 @@ int main() {
 	fprintf(pFile, "[Attendance]\n");
 	for (int i = 0; i < LECTURE_SIZE; i++) {
 		fprintf(pFile, "%s=", lectureTable[i].identifyNumber);
-		switch (lectureTable[i].klueRating)
+		switch (lectureTable[i].Att)
 		{
 		case ATT_VLOOSE:
 			fprintf(pFile, u8"안부름\n");
@@ -452,6 +494,27 @@ int main() {
 			break;
 		case POLITIC:
 			fprintf(pFile, u8"정경관\n");
+			break;
+		case HANA_SCIENCE:
+			fprintf(pFile, u8"하나관\n");
+			break;
+		case OLD_LAW_HALL:
+			fprintf(pFile, u8"법학관구관\n");
+			break;
+		case CREATIVE:
+			fprintf(pFile, u8"창의관\n");
+			break;
+		case FUSION:
+			fprintf(pFile, u8"미래융합관\n");
+			break;
+		case BIO_HALL:
+			fprintf(pFile, u8"생명관\n");
+			break;
+		case GYM_HALL:
+			fprintf(pFile, u8"화정체육관\n");
+			break;
+		case GLOBAL_HALL:
+			fprintf(pFile, u8"국제관\n");
 			break;
 		default:
 			fprintf(pFile, u8"안됨\n");
